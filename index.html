@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <link rel="icon" href="./bookmark.png">
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- fontawsome  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- main css  -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container my-5 py-5 position-relative" >
+        <div class="head-contant text-center">
+            <h1>Bookmarker</h1>
+
+        </div>
+        <div class="contant my-5 py-5">
+         
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <form action="" id="form">
+              
+            <div class="user-control user-name w-100 d-flex justify-content-center flex-column position-relative ">
+                <label for="sitename" class="mt-5 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    Site Name</label>
+                  <input type="text" class="input-bor  text-muted  mt-2 rounded-3 p-2 " placeholder="Bookmark Name"  id="siteName">
+                  <i class="fa-solid fa-check check-icon" id="success"></i>
+                  <i class="fa-solid fa-circle-exclamation check-icon " id="error"></i>
+
+            </div>
+            <div class="user-control website w-100 d-flex justify-content-center flex-column position-relative ">
+                <label for="website" class="mt-5 fw-semibold ">
+                    <i class="fa-solid fa-link"></i>
+                    Site Url</label>
+                  <input type="text" class="input-bor  text-muted  mt-2   rounded-3 p-2 position-relative" id="webSite" placeholder="Website Url" >
+                  <i class="fa-solid fa-check check-icon" id="success"></i>
+                  <i class="fa-solid fa-circle-exclamation check-icon" id="error"></i>
+            </div>
+          
+            
+              <button class="btn reaction d-flex mt-5  mx-auto" type="button" id="btn" data-bs-target="alertBox" data-bs-toggle="modal" >Submit</button>
+            </form>
+        </div>
+
+        <table class="table">
+           <thead>
+            <tr class="text-capitalize text-center">
+                <th >Index</th>
+                <th >Website Name</th>
+                <th >Visit</th>
+                <th >Delete</th>
+            </tr>
+           </thead>
+           <tbody id="update">
+            
+          
+            
+           </tbody>
+        </table>
+    </div>
+    <div class="" id="alertBox">  <div class=" box-card position-absolute start-0 top-0 h-100 w-100 d-flex justify-content-center align-items-center " >
+        <div class="box bg-white p-4 rounded-2 shadow-lg" >
+            <header class="box-header  w-100 d-flex justify-content-between align-items-center mb-4">
+            <div class="circles d-flex">
+                <span class="rounded-circle me-2 r-red" ></span>
+                <span class="rounded-circle me-2 r-yellow"></span>
+                <span class="rounded-circle me-2 r-green"></span>
+            </div>
+            <button class="btn border-0 " id="closebtn">
+                <i class="fa-solid fa-xmark close fs-3"></i>
+            </button>
+            </header>
+            <p class="pb-2 fw-bold">Site Name or Url is not valid, Please follow the rules below :</p>
+            <ol class="list-unstyled">
+                <li><i class="fa-regular fa-circle-right p-2 rules"></i>
+                    Site name must contain at least 3 characters
+                </li>
+                <li><i class="fa-regular fa-circle-right p-2 rules "></i>
+                    Site URL must be a valid one</li>
+            </ol>
+        </div>
+         
+    
+    
+       </div></div>
+  
+    
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
